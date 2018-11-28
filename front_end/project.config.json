@@ -1,23 +1,16 @@
 {
-	"description": "项目配置文件",
-	"packOptions": {
-		"ignore": []
-	},
+	"description": "项目配置文件。",
 	"setting": {
 		"urlCheck": true,
-		"es6": true,
+		"es6": false,
 		"postcss": true,
 		"minified": true,
 		"newFeature": true
 	},
+	"miniprogramRoot": "dist/wx/",
 	"compileType": "miniprogram",
-	"libVersion": "2.0.4",
-	"appid": "wx0d8cc337b528d260",
-	"projectname": "%E6%9C%8D%E5%88%9B",
-	"debugOptions": {
-		"hidedInDevtools": []
-	},
-	"isGameTourist": false,
+	"appid": "touristappid",
+	"projectname": "front_end",
 	"condition": {
 		"search": {
 			"current": -1,
