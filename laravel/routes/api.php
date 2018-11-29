@@ -12,10 +12,18 @@ use Illuminate\Http\Request;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
+
 //crossOrigin为允许跨域中间件
 
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::middleware('auth:api')->middleware('crossOrigin')->group();
+Route::middleware(['auth:api','crossOrigin'])->group(function () {
+
+});
+
+Route::middleware('crossOrigin')->prefix('users')->group(function () {
+   Route::any('login','UserLogin@userlogin');
+   Route::any('register','UserRegister@userregister');
+});
