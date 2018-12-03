@@ -23,11 +23,4 @@ class UserLogin extends Controller
         }
     }
 
-    public function userwxlogin(Request $req)
-    {
-        $this->validate($req, [
-            'wx_openid' => 'required',
-        ]);
-
-    }
 }
